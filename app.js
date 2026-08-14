@@ -197,11 +197,11 @@ function getClothingRecommendation(cur, daily) {
 
   const outer = (temp < 18 || needsRainGear)
     ? { icon: '🧥', label: 'うわぎひつよう' }
-    : { icon: '🧥', label: 'うわぎふよう' };
+    : { icon: '🧥', label: 'うわぎいらない' };
 
   const rain = needsRainGear
-    ? { icon: '☔', label: 'あまぐあり' }
-    : { icon: '☂️', label: 'あまぐふよう' };
+    ? { icon: '☔', label: 'あまぐひつよう' }
+    : { icon: '☂️', label: 'あまぐいらない' };
 
   return { top, bottom, outer, rain };
 }
